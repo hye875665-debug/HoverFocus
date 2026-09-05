@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		100000000000000000000001 /* HoverFocusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000001 /* HoverFocusApp.swift */; };
+		100000000000000000000002 /* HoverFocusMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000002 /* HoverFocusMenuView.swift */; };
+		100000000000000000000003 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000003 /* AppState.swift */; };
+		100000000000000000000004 /* AccessibilityWindowResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000004 /* AccessibilityWindowResolver.swift */; };
+		100000000000000000000005 /* GlobalInputMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000005 /* GlobalInputMonitor.swift */; };
+		100000000000000000000006 /* HoverActivationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000006 /* HoverActivationController.swift */; };
+		100000000000000000000007 /* GlobalHotKeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000007 /* GlobalHotKeyManager.swift */; };
+		100000000000000000000008 /* HoverDecisionEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000008 /* HoverDecisionEngine.swift */; };
+		100000000000000000000009 /* HoverDecisionEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000009 /* HoverDecisionEngineTests.swift */; };
+		10000000000000000000000A /* libHoverFocusCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000B /* libHoverFocusCore.a */; };
+		10000000000000000000000B /* libHoverFocusCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000B /* libHoverFocusCore.a */; };
+		10000000000000000000000C /* HoverFocusSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000E /* HoverFocusSettingsView.swift */; };
+		10000000000000000000000D /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000F /* AppIcon.icns */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		300000000000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 400000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 500000000000000000000002;
+			remoteInfo = HoverFocusCore;
+		};
+		300000000000000000000002 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 400000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 500000000000000000000002;
+			remoteInfo = HoverFocusCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		200000000000000000000001 /* HoverFocusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoverFocusApp.swift; sourceTree = "<group>"; };
+		200000000000000000000002 /* HoverFocusMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoverFocusMenuView.swift; sourceTree = "<group>"; };
+		200000000000000000000003 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		200000000000000000000004 /* AccessibilityWindowResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityWindowResolver.swift; sourceTree = "<group>"; };
+		200000000000000000000005 /* GlobalInputMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalInputMonitor.swift; sourceTree = "<group>"; };
+		200000000000000000000006 /* HoverActivationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoverActivationController.swift; sourceTree = "<group>"; };
+		200000000000000000000007 /* GlobalHotKeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHotKeyManager.swift; sourceTree = "<group>"; };
+		200000000000000000000008 /* HoverDecisionEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoverDecisionEngine.swift; sourceTree = "<group>"; };
+		200000000000000000000009 /* HoverDecisionEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoverDecisionEngineTests.swift; sourceTree = "<group>"; };
+		20000000000000000000000A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20000000000000000000000B /* libHoverFocusCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHoverFocusCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		20000000000000000000000C /* HoverFocus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HoverFocus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20000000000000000000000D /* HoverFocusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HoverFocusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20000000000000000000000E /* HoverFocusSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoverFocusSettingsView.swift; sourceTree = "<group>"; };
+		20000000000000000000000F /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Resources/AppIcon.icns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		600000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10000000000000000000000A /* libHoverFocusCore.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		600000000000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		600000000000000000000003 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10000000000000000000000B /* libHoverFocusCore.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		700000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				700000000000000000000002 /* HoverFocusApp */,
+				700000000000000000000003 /* HoverFocusCore */,
+				700000000000000000000004 /* HoverFocusTests */,
+				700000000000000000000005 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		700000000000000000000002 /* HoverFocusApp */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000001 /* HoverFocusApp.swift */,
+				200000000000000000000002 /* HoverFocusMenuView.swift */,
+				20000000000000000000000E /* HoverFocusSettingsView.swift */,
+				20000000000000000000000F /* AppIcon.icns */,
+				200000000000000000000003 /* AppState.swift */,
+				200000000000000000000004 /* AccessibilityWindowResolver.swift */,
+				200000000000000000000005 /* GlobalInputMonitor.swift */,
+				200000000000000000000006 /* HoverActivationController.swift */,
+				200000000000000000000007 /* GlobalHotKeyManager.swift */,
+				20000000000000000000000A /* Info.plist */,
+			);
+			path = HoverFocusApp;
+			sourceTree = "<group>";
+		};
+		700000000000000000000003 /* HoverFocusCore */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000008 /* HoverDecisionEngine.swift */,
+			);
+			path = HoverFocusCore;
+			sourceTree = "<group>";
+		};
+		700000000000000000000004 /* HoverFocusTests */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000009 /* HoverDecisionEngineTests.swift */,
+			);
+			path = HoverFocusTests;
+			sourceTree = "<group>";
+		};
+		700000000000000000000005 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20000000000000000000000C /* HoverFocus.app */,
+				20000000000000000000000B /* libHoverFocusCore.a */,
+				20000000000000000000000D /* HoverFocusTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		500000000000000000000001 /* HoverFocus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A00000000000000000000001 /* Build configuration list for PBXNativeTarget "HoverFocus" */;
+			buildPhases = (
+				800000000000000000000001 /* Sources */,
+				600000000000000000000001 /* Frameworks */,
+				900000000000000000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B00000000000000000000001 /* PBXTargetDependency */,
+			);
+			name = HoverFocus;
+			productName = HoverFocus;
+			productReference = 20000000000000000000000C /* HoverFocus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		500000000000000000000002 /* HoverFocusCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A00000000000000000000002 /* Build configuration list for PBXNativeTarget "HoverFocusCore" */;
+			buildPhases = (
+				800000000000000000000002 /* Sources */,
+				600000000000000000000002 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HoverFocusCore;
+			productName = HoverFocusCore;
+			productReference = 20000000000000000000000B /* libHoverFocusCore.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		500000000000000000000003 /* HoverFocusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A00000000000000000000003 /* Build configuration list for PBXNativeTarget "HoverFocusTests" */;
+			buildPhases = (
+				800000000000000000000003 /* Sources */,
+				600000000000000000000003 /* Frameworks */,
+				900000000000000000000002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B00000000000000000000002 /* PBXTargetDependency */,
+			);
+			name = HoverFocusTests;
+			productName = HoverFocusTests;
+			productReference = 20000000000000000000000D /* HoverFocusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		400000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					500000000000000000000001 = {
+						CreatedOnToolsVersion = 16.4;
+						ProvisioningStyle = Manual;
+					};
+					500000000000000000000002 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					500000000000000000000003 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+				};
+			};
+			buildConfigurationList = A00000000000000000000000 /* Build configuration list for PBXProject "HoverFocus" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = zh_CN;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+				zh_CN,
+			);
+			mainGroup = 700000000000000000000001;
+			productRefGroup = 700000000000000000000005 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				500000000000000000000001 /* HoverFocus */,
+				500000000000000000000002 /* HoverFocusCore */,
+				500000000000000000000003 /* HoverFocusTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		900000000000000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10000000000000000000000D /* AppIcon.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		900000000000000000000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		800000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000001 /* HoverFocusApp.swift in Sources */,
+				100000000000000000000002 /* HoverFocusMenuView.swift in Sources */,
+				10000000000000000000000C /* HoverFocusSettingsView.swift in Sources */,
+				100000000000000000000003 /* AppState.swift in Sources */,
+				100000000000000000000004 /* AccessibilityWindowResolver.swift in Sources */,
+				100000000000000000000005 /* GlobalInputMonitor.swift in Sources */,
+				100000000000000000000006 /* HoverActivationController.swift in Sources */,
+				100000000000000000000007 /* GlobalHotKeyManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		800000000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000008 /* HoverDecisionEngine.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		800000000000000000000003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000009 /* HoverDecisionEngineTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B00000000000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 500000000000000000000002 /* HoverFocusCore */;
+			targetProxy = 300000000000000000000001 /* PBXContainerItemProxy */;
+		};
+		B00000000000000000000002 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 500000000000000000000002 /* HoverFocusCore */;
+			targetProxy = 300000000000000000000002 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C00000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		C00000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		C00000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = HoverFocusApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yejialin.HoverFocus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		C00000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = HoverFocusApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yejialin.HoverFocus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		C00000000000000000000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				MACH_O_TYPE = staticlib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C00000000000000000000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				MACH_O_TYPE = staticlib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C00000000000000000000007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				GENERATE_INFOPLIST_FILE = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yejialin.HoverFocusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C00000000000000000000008 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				GENERATE_INFOPLIST_FILE = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yejialin.HoverFocusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A00000000000000000000000 /* Build configuration list for PBXProject "HoverFocus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C00000000000000000000001 /* Debug */,
+				C00000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A00000000000000000000001 /* Build configuration list for PBXNativeTarget "HoverFocus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C00000000000000000000003 /* Debug */,
+				C00000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A00000000000000000000002 /* Build configuration list for PBXNativeTarget "HoverFocusCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C00000000000000000000005 /* Debug */,
+				C00000000000000000000006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A00000000000000000000003 /* Build configuration list for PBXNativeTarget "HoverFocusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C00000000000000000000007 /* Debug */,
+				C00000000000000000000008 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 400000000000000000000001 /* Project object */;
+}

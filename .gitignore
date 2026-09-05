@@ -1,0 +1,13 @@
+.DS_Store
+.build/
+.swiftpm/
+DerivedData/
+Build/
+Dist/
+*.xcuserstate
+xcuserdata/
+HoverFocusApp/Resources/*.iconset/
+HoverFocusApp/Resources/AppIcon-Source-v1.png
+HoverFocusApp/Resources/AppIcon-Source-v2.png
+HoverFocusApp/Resources/AppIcon-v2.icns
+HoverFocusApp/Resources/AppIcon-v3.icns
