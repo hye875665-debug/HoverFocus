@@ -55,8 +55,8 @@ enum HoverFocusStatus: Equatable {
 final class AppState: ObservableObject {
   static let shared = AppState()
 
-  static let supportedDwellMilliseconds = [300, 500, 800, 1_200, 1_500]
-  static let dwellMillisecondsRange = 200...2_000
+  static let supportedDwellMilliseconds = [100, 200, 300, 500, 800, 1_200, 1_500]
+  static let dwellMillisecondsRange = 100...2_000
   static let cooldownMillisecondsRange = 0...1_500
   static let hotKeyDescription = "⌃⌥⌘H"
 
@@ -92,7 +92,8 @@ final class AppState: ObservableObject {
     static let protectDuringTyping = "HoverFocus.protectDuringTyping"
     static let menuBarIconStyle = "HoverFocus.menuBarIconStyle"
     static let launchAtLogin = "HoverFocus.launchAtLogin"
-    static let hasShownPermissionExplanation = "HoverFocus.hasShownPermissionExplanation"
+    static let lastPermissionExplanationVersion =
+      "HoverFocus.lastPermissionExplanationVersion"
   }
 
   private let defaults: UserDefaults
@@ -275,13 +276,16 @@ final class AppState: ObservableObject {
   }
 
   private func showFirstLaunchExplanationIfNeeded() {
+    let currentVersion =
+      Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "unknown"
+
     guard !isAccessibilityTrusted,
-      !defaults.bool(forKey: DefaultsKey.hasShownPermissionExplanation)
+      defaults.string(forKey: DefaultsKey.lastPermissionExplanationVersion) != currentVersion
     else {
       return
     }
 
-    defaults.set(true, forKey: DefaultsKey.hasShownPermissionExplanation)
+    defaults.set(currentVersion, forKey: DefaultsKey.lastPermissionExplanationVersion)
     NSRunningApplication.current.activate(options: [])
 
     let alert = NSAlert()

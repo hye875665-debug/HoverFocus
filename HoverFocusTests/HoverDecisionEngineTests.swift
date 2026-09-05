@@ -17,6 +17,20 @@ final class HoverDecisionEngineTests: XCTestCase {
     XCTAssertEqual(engine.timerFired(for: firstWindow, at: 10.8), .activate(windowID: firstWindow))
   }
 
+  func testHundredMillisecondDwellDuration() {
+    var engine = HoverDecisionEngine(dwellDuration: 0.1)
+
+    XCTAssertEqual(
+      engine.observe(windowID: firstWindow, at: 10),
+      .schedule(windowID: firstWindow, delay: 0.1)
+    )
+    guard case .reschedule(let delay) = engine.timerFired(for: firstWindow, at: 10.05) else {
+      return XCTFail("Expected the 100 ms timer to preserve its remaining delay")
+    }
+    XCTAssertEqual(delay, 0.05, accuracy: 0.000_001)
+    XCTAssertEqual(engine.timerFired(for: firstWindow, at: 10.1), .activate(windowID: firstWindow))
+  }
+
   func testMovingToAnotherWindowRestartsTimer() {
     var engine = HoverDecisionEngine(dwellDuration: 0.8)
 
